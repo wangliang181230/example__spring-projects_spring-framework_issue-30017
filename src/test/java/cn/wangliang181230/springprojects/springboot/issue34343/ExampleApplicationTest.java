@@ -13,7 +13,10 @@ public class ExampleApplicationTest {
 	@Test
 	@Disabled("For debugging")
 	public void runWithSpringAotModeAfterProcessAot() throws Exception {
+		// Enable spring-aot-mode
 		System.setProperty("spring.aot.enabled", "true");
+
+		// Start the application
 		ExampleApplication.main(new String[0]);
 	}
 
