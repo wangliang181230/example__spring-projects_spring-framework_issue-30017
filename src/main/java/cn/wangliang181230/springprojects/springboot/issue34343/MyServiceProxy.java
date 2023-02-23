@@ -14,20 +14,20 @@ public class MyServiceProxy implements IService {
 
 
 	@Override
-	public void foo() {
+	public String foo() {
 		System.out.println("Before running foo.");
 		try {
-			service.foo();
+			return "proxy-" + service.foo();
 		} finally {
 			System.out.println("After running foo.");
 		}
 	}
 
 	@Override
-	public void bar() {
+	public String bar() {
 		System.out.println("Before running bar.");
 		try {
-			service.bar();
+			return "proxy-" + service.bar();
 		} finally {
 			System.out.println("After running bar.");
 		}

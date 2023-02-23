@@ -3,12 +3,14 @@ package cn.wangliang181230.springprojects.springboot.issue34343;
 public class MyService implements IService {
 
 	@Override
-	public void foo() {
+	public String foo() {
 		System.out.println("Running foo.");
+		return "foo";
 	}
 
 	@Override
-	public void bar() {
+	public String bar() {
 		System.out.println("Running bar.");
+		return "bar";
 	}
 }

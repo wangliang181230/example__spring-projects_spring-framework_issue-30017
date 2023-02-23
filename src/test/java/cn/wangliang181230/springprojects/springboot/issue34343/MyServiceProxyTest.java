@@ -1,5 +1,6 @@
 package cn.wangliang181230.springprojects.springboot.issue34343;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -13,12 +14,12 @@ public class MyServiceProxyTest {
 
 	@Test
 	public void testFoo() {
-		service.foo();
+		Assertions.assertEquals("proxy-foo", service.foo());
 	}
 
 	@Test
 	public void testBar() {
-		service.bar();
+		Assertions.assertEquals("proxy-bar", service.bar());
 	}
 
 }
