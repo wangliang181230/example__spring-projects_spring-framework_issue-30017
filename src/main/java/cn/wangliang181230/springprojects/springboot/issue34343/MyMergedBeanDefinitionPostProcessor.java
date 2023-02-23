@@ -18,11 +18,11 @@ public class MyMergedBeanDefinitionPostProcessor implements MergedBeanDefinition
 	@Override
 	public void postProcessMergedBeanDefinition(RootBeanDefinition beanDefinition, Class<?> beanType, String beanName) {
 		if (IService.class.isAssignableFrom(beanType)) {
-			if (AotDetector.useGeneratedArtifacts()) {
+			//if (AotDetector.useGeneratedArtifacts()) {
 				if (beanDefinition.getSource() == null) {
 					throw new BeanDefinitionValidationException("The source of the beanDefinition is null");
 				}
-			}
+			//}
 
 			MyAnnotation anno = this.getAnnotation(beanDefinition);
 			if (anno != null) {
