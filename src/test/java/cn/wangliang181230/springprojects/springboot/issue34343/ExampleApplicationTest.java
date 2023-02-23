@@ -3,6 +3,7 @@ package cn.wangliang181230.springprojects.springboot.issue34343;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+@Disabled("For debugging")
 public class ExampleApplicationTest {
 
 	/**
@@ -11,7 +12,6 @@ public class ExampleApplicationTest {
 	 * @throws Exception the exception
 	 */
 	@Test
-	@Disabled("For debugging")
 	public void runWithSpringAotModeAfterProcessAot() throws Exception {
 		// Enable spring-aot-mode
 		System.setProperty("spring.aot.enabled", "true");
