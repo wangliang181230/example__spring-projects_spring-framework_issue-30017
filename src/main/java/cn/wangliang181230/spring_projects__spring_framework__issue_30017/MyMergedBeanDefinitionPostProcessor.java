@@ -1,9 +1,8 @@
-package cn.wangliang181230.springprojects.springboot.issue34343;
+package cn.wangliang181230.spring_projects__spring_framework__issue_30017;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import org.springframework.aot.AotDetector;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.support.BeanDefinitionValidationException;
 import org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor;

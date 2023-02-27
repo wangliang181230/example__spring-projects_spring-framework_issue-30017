@@ -1,13 +1,13 @@
-package cn.wangliang181230.springprojects.springboot.issue34343;
+package cn.wangliang181230.spring_projects__spring_framework__issue_30017;
 
 import java.util.Objects;
 
-public class MyServiceProxy implements IService {
+public class MyServiceProxy implements cn.wangliang181230.spring_projects__spring_framework__issue_30017.IService {
 
-	private final IService service;
+	private final cn.wangliang181230.spring_projects__spring_framework__issue_30017.IService service;
 
 
-	public MyServiceProxy(IService service) {
+	public MyServiceProxy(cn.wangliang181230.spring_projects__spring_framework__issue_30017.IService service) {
 		Objects.requireNonNull(service, "The service must not be null.");
 		this.service = service;
 	}

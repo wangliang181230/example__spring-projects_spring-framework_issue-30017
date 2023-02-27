@@ -1,4 +1,4 @@
-package cn.wangliang181230.springprojects.springboot.issue34343;
+package cn.wangliang181230.spring_projects__spring_framework__issue_30017;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Disabled;

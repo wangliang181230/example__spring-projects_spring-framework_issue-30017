@@ -10,7 +10,7 @@
 	</parent>
 
 	<groupId>cn.wangliang181230</groupId>
-	<artifactId>spring-projects_spring-boot_issue_34343</artifactId>
+	<artifactId>spring_projects__spring_framework__issue_30017</artifactId>
 	<version>0.1-SNAPSHOT</version>
 
 	<properties>

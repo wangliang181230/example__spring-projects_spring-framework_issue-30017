@@ -1,4 +1,4 @@
-package cn.wangliang181230.springprojects.springboot.issue34343;
+package cn.wangliang181230.spring_projects__spring_framework__issue_30017;
 
 public class MyService implements IService {
 
