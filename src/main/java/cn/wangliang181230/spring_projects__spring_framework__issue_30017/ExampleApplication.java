@@ -3,11 +3,17 @@ package cn.wangliang181230.spring_projects__spring_framework__issue_30017;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.NativeDetector;
+import org.springframework.core.SpringProperties;
 
 @SpringBootApplication
 public class ExampleApplication {
 
 	public static void main(String[] args) throws Exception {
+		if (!SpringProperties.getFlag("spring.aot.processing")) {
+			// Enable spring-aot-mode
+			System.setProperty("spring.aot.enabled", "true");
+		}
+
 		try {
 			SpringApplication.run(ExampleApplication.class, args);
 		} catch (SpringApplication.AbandonedRunException e) {
