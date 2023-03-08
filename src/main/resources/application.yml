@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: spring-projects_spring-framework_issue-30017
+    name: example__spring-projects_spring-framework_issue-30017
 
 logging:
   file:
